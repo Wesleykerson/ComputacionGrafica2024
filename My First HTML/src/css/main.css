@@ -1,18 +1,19 @@
 
 /* Palabra reservada: body, p , h1*/
 body{
-    background-color: azure;
-    font-family: verdana;
+    background-color: rgb(179, 244, 244);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
 }
 
 /* Class */
 .myText{ 
-    background-color: red;
+    background-color: rgb(0, 255, 183);
 }
 
 /* id */
 #myImageSVG{
+    width="600" height="600"  
     background-color: aqua;
 }
 
