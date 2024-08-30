@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Geometry Dash >:D</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="./src/img/icons8-geometría-64.png"> 
+    <script src="./js/vectorCalculador.js"></script>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar bg-success" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar scroll</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Link</a>
+        </li>
+      </ul>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Sarakatunga
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Ya aparece</button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+            <!-- Navbar content -->
+          </nav>
+    </header>
+    <body>
+      <header>
+        <section>
+          <br>
+          <div class="container text-center">
+            <div class="row">
+                <div class="col-2"> </div>
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header">
+                            Calcular un vector :D
+                        </div>
+                        <div class="card-body">
+
+
+
+<form action=""> <!-- Punto Final - Punto Inicial = Vector -->
+            <label for="">Punto A (Punto Inicial)</label>
+            <span>(</span>
+                <input style="width: 10%;" type="number" name=puntoAX id=puntoAX placeholder="X">
+            <span>,</span>
+                <input style="width: 10%;" type="number" name=puntoAY id=puntoAY placeholder="Y">
+            <span>,</span>
+                <input style="width: 10%;" type="number" name=puntoAZ id=puntoAZ placeholder="Z">
+            <span>)</span>
+            <br><br>
+            <label for="">Punto B (Punto Final)</label>
+            <span>(</span>
+            <input style="width: 10%;" type="number" name="puntoBX" id="puntoBX" placeholder="X">
+        <span>,</span>
+            <input style="width: 10%;" type="number" name="puntoBY" id="puntoBY" placeholder="Y">
+        <span>,</span>
+            <input style="width: 10%;" type="number" name="puntoBZ" id="puntoBZ" placeholder="Z">
+        <span>)</span>
+        <br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+
+          <button onclick="vector()" type="button" class="btn btn-success">Calcular</button>
+         <span  id=result >calculando...</span>
+        </div>
+          </form>
+          <div class="card">
+            <div class="card-header">
+                Suma De Vectores
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Producto Escalar
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Magnitud Vector
+            </div>
+            <div class="card-body">
+            </div>
+          <div class="col-2"> </div>
+
+        </section>
+      </header>
+    </body>
+</body>
+</html> 
