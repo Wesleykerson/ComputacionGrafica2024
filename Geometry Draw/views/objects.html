@@ -1,3 +1,4 @@
+
 <!--
     Autor: Wesley David Saavedra Laro
     Dia de  creacion: 05/09/2024
@@ -28,20 +29,28 @@
 
                     <div class="container text-center">
                         <div class="row">
-                          <div class="col-4">
-                            <button class="btn btn-secondary" onclick="createGeometry('Torus')">Torus</button>
+                          <div class="col-3">
+                            <button class="btn btn-secondary" onclick="showInputs('Torus')">Torus</button>
                           </div>
-                          <div class="col-4">
-                            <button class="btn btn-secondary" onclick="createGeometry('Cone')">Cone</button>
+                          <div class="col-3">
+                            <button class="btn btn-secondary" onclick="showInputs('Cone')">Cone</button>
                           </div>
-                          <div class="col-4">
-                            <button class="btn btn-secondary" onclick="createGeometry('Box')">Box</button>
+                          <div class="col-3">
+                            <button class="btn btn-secondary" onclick="showInputs('Box')">Box</button>
+                          </div>
+                          <div class="col-3"></div>
+                            <button class="btn btn-secondary" onclick="deleteGeometry()">Eliminar</button>
                           </div>
                         </div>
                       </div>
                 </div>
             </div>
           </nav>
+          <!-- Formulario para ingresar parámetros de la figura -->
+    <div id="input-form" class="container mt-3">
+      <!-- Inputs dinámicos se mostrarán aquí -->
+
+    </div>
         <canvas id="app"></canvas>
     </div>
 
